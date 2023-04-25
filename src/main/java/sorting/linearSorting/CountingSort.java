@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class CountingSort extends AbstractSorting<Integer> {
 
 	public static int max(Integer[] array, int leftIndex, int rightIndex) {
-		int max = 0;
+		int max = Integer.MIN_VALUE;
 		for (int i = leftIndex; i <= rightIndex; i++) {
 			if (array[i] > max) {
 				max = array[i];
